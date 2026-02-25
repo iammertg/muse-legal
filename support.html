@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support – Muse</title>
+    <meta name="description" content="Get support for the Muse app. Contact us or browse frequently asked questions." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #0A0A0A;
+            --surface: #111111;
+            --border: rgba(255, 255, 255, 0.08);
+            --accent: #A78BFA;
+            --accent2: #60A5FA;
+            --text: #F1F5F9;
+            --muted: #94A3B8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        .header-text a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .header-text a:hover {
+            color: var(--accent);
+        }
+
+        .header-text h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .contact-card:hover {
+            border-color: rgba(167, 139, 250, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .contact-card .icon {
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .contact-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        .contact-card p {
+            font-size: 0.85rem;
+            color: var(--muted);
+            line-height: 1.5;
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 1.25rem;
+            padding-left: 0.75rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .faq {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 3rem;
+        }
+
+        details {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+
+        details[open] {
+            border-color: rgba(167, 139, 250, 0.3);
+        }
+
+        summary {
+            cursor: pointer;
+            padding: 1rem 1.25rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            color: var(--accent);
+            font-size: 1.2rem;
+            font-weight: 300;
+            flex-shrink: 0;
+            transition: transform 0.2s;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.25rem 1rem;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: var(--muted);
+            border-top: 1px solid var(--border);
+            padding-top: 1rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.8rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        @media (max-width: 480px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🎵</div>
+            <div class="header-text">
+                <a href="index.html">← Back to Home</a>
+                <h1>Support</h1>
+            </div>
+        </header>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <span class="icon">📧</span>
+                <h3>Email Support</h3>
+                <p>Send us a message and we'll get back to you within 24–48 hours.</p>
+                <a href="mailto:support@frontendmuse.app">support@frontendmuse.app</a>
+            </div>
+            <div class="contact-card">
+                <span class="icon">🐛</span>
+                <h3>Report a Bug</h3>
+                <p>Found an issue? Let us know so we can fix it as quickly as possible.</p>
+                <a href="https://github.com/iammertg/muse-legal/issues" target="_blank">Open an Issue</a>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+            <details>
+                <summary>How do I create an account?</summary>
+                <div class="faq-answer">
+                    Download Muse from the App Store and open the app. Tap "Sign Up" and follow the prompts
+                    to create an account using your email address via our secure Auth0 authentication.
+                </div>
+            </details>
+
+            <details>
+                <summary>How does AI assistance work in Muse?</summary>
+                <div class="faq-answer">
+                    Muse uses large language models to answer your frontend engineering questions in real-time.
+                    You can type your question, use voice input, or share an image for visual analysis.
+                    All queries are processed securely and are not permanently stored.
+                </div>
+            </details>
+
+            <details>
+                <summary>Why does Muse need camera and microphone access?</summary>
+                <div class="faq-answer">
+                    The camera and photo library permissions allow you to share screenshots or images for
+                    AI-powered visual analysis. The microphone permission enables voice input so you can
+                    ask questions hands-free using speech recognition.
+                </div>
+            </details>
+
+            <details>
+                <summary>Is my data private and secure?</summary>
+                <div class="faq-answer">
+                    Yes. We take your privacy seriously. Voice and image inputs are processed in real-time
+                    and are not permanently stored. Your account data is secured via Auth0. Please review our
+                    <a href="privacy-policy.html">Privacy Policy</a> for full details.
+                </div>
+            </details>
+
+            <details>
+                <summary>How do I delete my account?</summary>
+                <div class="faq-answer">
+                    To delete your account and all associated data, please email us at
+                    <a href="mailto:support@frontendmuse.app">support@frontendmuse.app</a> with the subject
+                    line "Account Deletion Request". We will process your request within 7 business days.
+                </div>
+            </details>
+
+            <details>
+                <summary>The app isn't working as expected. What should I do?</summary>
+                <div class="faq-answer">
+                    First, try closing and reopening the app, then check your internet connection. If the
+                    problem persists, try uninstalling and reinstalling the app. If none of these steps work,
+                    please contact us at <a href="mailto:support@frontendmuse.app">support@frontendmuse.app</a>
+                    with a description of the issue and your device model and iOS version.
+                </div>
+            </details>
+        </div>
+
+        <footer>
+            &copy; 2025 Muse &nbsp;·&nbsp;
+            <a href="index.html">Home</a> &nbsp;·&nbsp;
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </footer>
+    </div>
+</body>
+
+</html>
