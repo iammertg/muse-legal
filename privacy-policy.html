@@ -6,6 +6,8 @@
 <title>Privacy Policy — Nyora</title>
 <meta name="description" content="Privacy Policy for the Nyora app — your AI cultural companion." />
 <meta name="theme-color" content="#0A0F14" />
+<link rel="icon" type="image/png" href="nyora-logo.png" />
+<link rel="apple-touch-icon" href="nyora-logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,0..100;1,9..144,400..600,0..100&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
@@ -42,12 +44,12 @@ body::before{
   display:flex;align-items:center;gap:14px;
 }
 .topbar .mark{
-  width:34px;height:34px;border-radius:50%;
-  border:1px solid var(--line);
-  background:radial-gradient(circle at 50% 30%, rgba(230,184,74,.20), transparent 65%);
-  display:grid;place-items:center;
-  font-family:var(--display);font-style:italic;font-weight:500;font-size:18px;color:var(--gold);
-  font-variation-settings:"opsz" 144,"SOFT" 100;
+  width:38px;height:38px;display:grid;place-items:center;flex-shrink:0;
+}
+.topbar .mark img{
+  width:100%;height:100%;object-fit:contain;
+  mix-blend-mode:screen;
+  filter:drop-shadow(0 0 14px rgba(230,184,74,.35));
 }
 .topbar a.brand{
   font-family:var(--display);font-weight:500;font-size:20px;letter-spacing:-.015em;color:var(--ivory);
@@ -134,7 +136,7 @@ footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
 
 <nav class="topbar">
   <div class="topbar-inner">
-    <span class="mark">N</span>
+    <span class="mark"><img src="nyora-logo.png" alt="Nyora" /></span>
     <a href="index.html" class="brand">Ny<span class="accent">o</span>ra</a>
     <span class="crumb">Privacy Policy</span>
   </div>
