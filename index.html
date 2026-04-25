@@ -1,164 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muse – Legal & Support</title>
-    <meta name="description" content="Privacy Policy and Support information for the Muse app." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-    <style>
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Nyora — Legal &amp; Support</title>
+<meta name="description" content="Privacy Policy and Support information for the Nyora app — your AI cultural companion." />
+<meta name="theme-color" content="#0A0F14" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,0..100;1,9..144,400..600,0..100&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0A0F14; --ink-1:#0E141A; --ink-2:#131A22;
+  --gold:#E6B84A; --gold-deep:#B08D57; --gold-soft:#F1D89B;
+  --ivory:#F4EFE6; --mute:rgba(244,239,230,.58); --mute-2:rgba(244,239,230,.32);
+  --line:rgba(230,184,74,.16); --line-2:rgba(244,239,230,.08);
+  --display:'Fraunces',serif; --body:'Manrope',sans-serif; --mono:'JetBrains Mono',monospace;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);background:var(--ink);color:var(--ivory);
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:3rem 1.25rem;line-height:1.6;-webkit-font-smoothing:antialiased;
+  position:relative;overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:-20%;z-index:-1;
+  background:
+    radial-gradient(40% 50% at 50% 30%, rgba(230,184,74,.12), transparent 65%),
+    radial-gradient(50% 60% at 70% 80%, rgba(157,131,255,.05), transparent 70%);
+  pointer-events:none;
+}
+.container{max-width:640px;width:100%;text-align:center;position:relative;z-index:1}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:14px;
+  font-family:var(--mono);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold);
+  margin-bottom:24px;
+}
+.eyebrow .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
 
-        :root {
-            --bg: #0A0A0A;
-            --surface: #111111;
-            --border: rgba(255, 255, 255, 0.08);
-            --accent: #A78BFA;
-            --accent2: #60A5FA;
-            --text: #F1F5F9;
-            --muted: #94A3B8;
-        }
+.brand-mark{
+  width:72px;height:72px;border-radius:50%;
+  border:1px solid var(--line);
+  background:radial-gradient(circle at 50% 30%, rgba(230,184,74,.25), transparent 65%);
+  display:grid;place-items:center;margin:0 auto 28px;
+  font-family:var(--display);font-style:italic;font-weight:500;font-size:38px;color:var(--gold);
+  font-variation-settings:"opsz" 144,"SOFT" 100;
+  box-shadow:0 0 60px rgba(230,184,74,.18);
+}
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 1rem;
-        }
+h1{
+  font-family:var(--display);font-weight:400;font-size:clamp(48px,6vw,72px);letter-spacing:-0.025em;
+  line-height:1;margin-bottom:14px;
+  font-variation-settings:"opsz" 144,"SOFT" 30;
+}
+h1 .accent{color:var(--gold);font-style:italic;font-weight:500;font-variation-settings:"opsz" 144,"SOFT" 100}
 
-        .container {
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-        }
+.subtitle{
+  color:var(--mute);font-size:1rem;max-width:42ch;margin:0 auto 56px;line-height:1.6;font-weight:300;
+}
 
-        .logo {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--accent), var(--accent2));
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            margin: 0 auto 2rem;
-            box-shadow: 0 0 40px rgba(167, 139, 250, 0.3);
-        }
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:56px}
+.card{
+  background:linear-gradient(180deg, rgba(244,239,230,.03), rgba(244,239,230,.005));
+  border:1px solid var(--line-2);border-radius:18px;
+  padding:28px 24px;text-decoration:none;color:var(--ivory);
+  display:flex;flex-direction:column;align-items:flex-start;text-align:left;
+  transition:transform .35s cubic-bezier(.22,.61,.36,1), border-color .35s, box-shadow .35s, background .35s;
+}
+.card:hover{
+  transform:translateY(-4px);
+  border-color:var(--line);
+  background:linear-gradient(180deg, rgba(230,184,74,.06), rgba(230,184,74,.01));
+  box-shadow:0 18px 50px rgba(0,0,0,.35), 0 0 0 1px rgba(230,184,74,.18) inset;
+}
+.card .ic{
+  width:34px;height:34px;border-radius:10px;
+  background:rgba(230,184,74,.10);border:1px solid var(--line);
+  display:grid;place-items:center;color:var(--gold);font-size:16px;
+  margin-bottom:18px;
+}
+.card h2{
+  font-family:var(--display);font-weight:500;font-size:20px;letter-spacing:-.01em;color:var(--ivory);
+  margin-bottom:6px;font-variation-settings:"opsz" 144;
+}
+.card p{font-size:13.5px;color:var(--mute);line-height:1.55}
+.card .arrow{
+  margin-top:18px;font-family:var(--mono);font-size:10.5px;letter-spacing:0.22em;
+  text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:8px;
+}
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--accent), var(--accent2));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.75rem;
-        }
+footer{
+  color:var(--mute-2);font-family:var(--mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+}
+footer .div{width:40px;height:1px;background:var(--line);margin:8px auto}
 
-        .subtitle {
-            color: var(--muted);
-            font-size: 1rem;
-            margin-bottom: 3rem;
-            line-height: 1.6;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-
-        .card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 2rem 1.5rem;
-            text-decoration: none;
-            color: var(--text);
-            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(167, 139, 250, 0.4);
-            box-shadow: 0 8px 32px rgba(167, 139, 250, 0.15);
-        }
-
-        .card-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        .card h2 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .card p {
-            font-size: 0.85rem;
-            color: var(--muted);
-            line-height: 1.5;
-        }
-
-        footer {
-            color: var(--muted);
-            font-size: 0.8rem;
-        }
-
-        @media (max-width: 480px) {
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+@media (max-width:540px){.cards{grid-template-columns:1fr}}
+</style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="logo">🎵</div>
-        <h1>Muse</h1>
-        <p class="subtitle">Your AI-powered frontend engineering companion.<br />Resources and legal information for the
-            app.</p>
+<div class="container">
+  <div class="eyebrow">
+    <span class="dot"></span>
+    <span>Legal &amp; Support</span>
+  </div>
+  <div class="brand-mark">N</div>
+  <h1>Ny<span class="accent">o</span>ra</h1>
+  <p class="subtitle">Your AI cultural companion. Resources, policies, and help — for travelers, museum-goers, and the simply curious.</p>
 
-        <div class="cards">
-            <a class="card" href="privacy-policy.html">
-                <span class="card-icon">🔒</span>
-                <h2>Privacy Policy</h2>
-                <p>How we collect, use, and protect your personal data.</p>
-            </a>
-            <a class="card" href="support.html">
-                <span class="card-icon">💬</span>
-                <h2>Support</h2>
-                <p>Get help, report issues, or contact us directly.</p>
-            </a>
-        </div>
+  <div class="cards">
+    <a class="card" href="privacy-policy.html">
+      <span class="ic">◐</span>
+      <h2>Privacy Policy</h2>
+      <p>How we collect, use, and protect your personal data.</p>
+      <span class="arrow">Read · <span aria-hidden="true">→</span></span>
+    </a>
+    <a class="card" href="support.html">
+      <span class="ic">◑</span>
+      <h2>Support</h2>
+      <p>Get help, browse FAQs, or contact us directly.</p>
+      <span class="arrow">Open · <span aria-hidden="true">→</span></span>
+    </a>
+  </div>
 
-        <footer>
-            &copy; 2025 Muse &nbsp;·&nbsp; com.frontendmuse.app
-        </footer>
-    </div>
+  <footer>
+    <span>© <span id="y">2026</span> Nyora · com.frontendmuse.app</span>
+    <span class="div"></span>
+    <span>Crafted with care · MMXXVI</span>
+  </footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
-
 </html>
