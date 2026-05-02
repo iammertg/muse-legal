@@ -143,7 +143,7 @@ footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
 </nav>
 
 <main>
-  <div class="eyebrow"><span class="dot"></span><span>Last updated · April 25, 2026</span></div>
+  <div class="eyebrow"><span class="dot"></span><span>Last updated · May 3, 2026</span></div>
   <h1>Privacy <em>Policy</em></h1>
   <span class="updated">Effective immediately for all users</span>
 
@@ -170,8 +170,16 @@ footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
         servers to provide continuity across sessions. You may request deletion at any time.</li>
       <li><strong>Activity, Itinerary &amp; Group Data:</strong> Your visit history, planned itineraries,
         group rooms, mini-game scores, and shared favorites are stored to personalise your experience.</li>
-      <li><strong>Usage Data:</strong> We collect anonymised data about how you interact with the app
-        (features used, session duration) to improve our service.</li>
+      <li><strong>Usage &amp; Analytics Data:</strong> We log how you interact with the app — screens
+        viewed, key actions (itinerary generated, museum saved, recap shared), session duration, and
+        the marketing source you arrived from (UTM parameters from a deep link, if any). These events
+        are linked to your account identifier so we can build retention and funnel insights and
+        diagnose problems specific to your account. They are never used for advertising and never
+        sold to a third party. You can disable analytics at any time in Settings → Privacy.</li>
+      <li><strong>Diagnostics:</strong> We collect crash reports and performance traces (sampled at
+        10% in production) to fix bugs and keep the app fast. Diagnostic events are linked to your
+        account identifier so we can triage issues and measure crash-free-user rates. Email
+        addresses are obfuscated on-device before they leave your phone.</li>
       <li><strong>Subscription Status:</strong> We store whether you hold an active premium subscription
         to unlock premium features.</li>
     </ul>
@@ -201,13 +209,20 @@ footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
         (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>)</li>
       <li><strong>RevenueCat</strong> — in-app purchase and subscription management
         (<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>)</li>
+      <li><strong>Sentry</strong> — crash reporting and performance monitoring. Diagnostic events
+        are linked to your account identifier for triage; emails are obfuscated on-device before
+        transmission. (<a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry Privacy Policy</a>)</li>
+      <li><strong>PostHog</strong> — product analytics (screens viewed, key actions, retention).
+        Events are linked to your account identifier; opt-out is available in-app via Settings →
+        Privacy. (<a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog Privacy Policy</a>)</li>
       <li><strong>Google Maps</strong> — displaying museum locations and nearby points of interest
         (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>)</li>
       <li><strong>Expo / EAS</strong> — app delivery and over-the-air updates
         (<a href="https://expo.dev/privacy" target="_blank" rel="noopener">Expo Privacy Policy</a>)</li>
     </ul>
-    <p>We do not sell your personal data to any third party, and we do not share your data with third
-      parties for advertising purposes.</p>
+    <p>We do not sell your personal data to any third party, we do not share your data with third
+      parties for advertising purposes, and we do not engage in cross-app or cross-website tracking
+      (no IDFA / advertising identifiers are collected).</p>
   </section>
 
   <section>
