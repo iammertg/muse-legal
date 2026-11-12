@@ -1,160 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<title>Privacy Policy — Nyore</title>
-<meta name="description" content="Privacy Policy for the Nyore app — your AI cultural companion." />
-<meta name="theme-color" content="#0A0F14" />
-<link rel="icon" type="image/png" href="nyore-logo.png" />
-<link rel="apple-touch-icon" href="nyore-logo.png" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Nyore: privacy policy</title>
+<meta name="description" content="Privacy policy for the Nyore app, your AI cultural companion." />
+<link rel="canonical" href="https://iammertg.github.io/muse-legal/privacy-policy.html" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Nyore" />
+<meta property="og:url" content="https://iammertg.github.io/muse-legal/privacy-policy.html" />
+<meta property="og:title" content="Nyore: privacy policy" />
+<meta property="og:description" content="How Nyore collects, uses, and protects your information." />
+<meta property="og:image" content="https://www.nyore.app/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="The Mona Lisa lit on a green gallery wall, with Nyore's camera holding it on an iPhone" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#0F1814" />
+
+<link rel="icon" type="image/png" sizes="128x128" href="favicon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,0..100;1,9..144,400..600,0..100&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --ink:#0A0F14; --ink-1:#0E141A;
-  --gold:#E6B84A; --gold-deep:#B08D57; --gold-soft:#F1D89B;
-  --ivory:#F4EFE6; --mute:rgba(244,239,230,.62); --mute-2:rgba(244,239,230,.34);
-  --line:rgba(230,184,74,.16); --line-2:rgba(244,239,230,.08);
-  --display:'Fraunces',serif; --body:'Manrope',sans-serif; --mono:'JetBrains Mono',monospace;
-}
-body{
-  font-family:var(--body);background:var(--ink);color:var(--ivory);
-  line-height:1.7;-webkit-font-smoothing:antialiased;
-  position:relative;overflow-x:hidden;min-height:100vh;
-}
-body::before{
-  content:'';position:fixed;inset:-20%;z-index:-1;pointer-events:none;
-  background:
-    radial-gradient(35% 30% at 50% 0%, rgba(230,184,74,.10), transparent 65%),
-    radial-gradient(50% 50% at 80% 100%, rgba(157,131,255,.05), transparent 70%);
-}
-
-/* HEADER NAV */
-.topbar{
-  position:sticky;top:0;z-index:50;
-  background:rgba(10,15,20,.78);backdrop-filter:blur(24px) saturate(160%);
-  -webkit-backdrop-filter:blur(24px) saturate(160%);
-  border-bottom:1px solid var(--line-2);
-}
-.topbar-inner{
-  max-width:820px;margin:0 auto;padding:18px 1.25rem;
-  display:flex;align-items:center;gap:14px;
-}
-.topbar .mark{
-  width:38px;height:38px;display:grid;place-items:center;flex-shrink:0;
-}
-.topbar .mark img{
-  width:100%;height:100%;object-fit:contain;
-  mix-blend-mode:screen;
-  filter:drop-shadow(0 0 14px rgba(230,184,74,.35));
-}
-.topbar a.brand{
-  font-family:var(--display);font-weight:500;font-size:20px;letter-spacing:-.015em;color:var(--ivory);
-  text-decoration:none;font-variation-settings:"opsz" 144;
-}
-.topbar a.brand .accent{color:var(--gold);font-style:italic;font-variation-settings:"opsz" 144,"SOFT" 100}
-.topbar .crumb{
-  font-family:var(--mono);font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--mute-2);
-  margin-left:auto;
-}
-
-main{max-width:820px;margin:0 auto;padding:80px 1.25rem 100px}
-
-/* HERO */
-.eyebrow{
-  display:inline-flex;align-items:center;gap:14px;
-  font-family:var(--mono);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold);
-  margin-bottom:24px;
-}
-.eyebrow .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
-
-h1{
-  font-family:var(--display);font-weight:400;font-size:clamp(46px,6vw,72px);letter-spacing:-.025em;
-  line-height:1;margin-bottom:14px;color:var(--ivory);
-  font-variation-settings:"opsz" 144,"SOFT" 30;
-}
-h1 em{color:var(--gold);font-style:italic;font-weight:500;font-variation-settings:"opsz" 144,"SOFT" 100}
-
-.updated{
-  font-family:var(--mono);font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--mute-2);
-  margin-bottom:48px;display:inline-block;
-}
-
-.intro{
-  font-size:18px;line-height:1.65;color:var(--mute);font-weight:300;
-  padding-bottom:48px;border-bottom:1px solid var(--line-2);margin-bottom:48px;
-  max-width:60ch;
-}
-.intro strong{color:var(--ivory);font-weight:500}
-
-/* SECTIONS */
-section{margin-bottom:56px}
-h2{
-  font-family:var(--display);font-weight:500;font-size:26px;letter-spacing:-.015em;color:var(--ivory);
-  margin-bottom:18px;display:flex;align-items:baseline;gap:14px;
-  font-variation-settings:"opsz" 144;
-}
-h2 .num{
-  font-family:var(--display);font-style:italic;font-weight:400;font-size:18px;color:var(--gold-deep);
-  font-variation-settings:"opsz" 144,"SOFT" 100;
-}
-
-p{color:var(--mute);font-size:15.5px;margin-bottom:14px;font-weight:300}
-p strong{color:var(--ivory);font-weight:500}
-
-ul{color:var(--mute);font-size:15.5px;padding-left:1.4rem;margin-bottom:14px;font-weight:300}
-ul li{margin-bottom:10px;line-height:1.65}
-ul li::marker{color:var(--gold)}
-ul li strong{color:var(--ivory);font-weight:500}
-
-a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line)}
-a:hover{color:var(--gold-soft);border-color:var(--gold)}
-
-/* CONTACT BOX */
-.contact-box{
-  margin-top:56px;
-  background:linear-gradient(180deg, rgba(230,184,74,.06), rgba(230,184,74,.005));
-  border:1px solid var(--line);border-radius:18px;padding:32px;
-}
-.contact-box h2{margin-top:0;margin-bottom:14px}
-.contact-box p{margin:0;color:var(--ivory)}
-
-/* FOOTER */
-footer{
-  margin-top:80px;padding:32px 1.25rem;border-top:1px solid var(--line-2);text-align:center;
-  font-family:var(--mono);font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--mute-2);
-  display:flex;flex-direction:column;gap:8px;align-items:center;
-}
-footer a{border:none}
-footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css" />
 </head>
 <body>
+<header class="nav">
+  <a class="brand" href="https://www.nyore.app/" aria-label="Nyore home"><img src="logo.png" width="96" height="96" alt="" />Nyore</a>
+  <a class="nav-cta" href="https://apps.apple.com/app/id6759682028" target="_blank" rel="noopener">Download</a>
+</header>
 
-<nav class="topbar">
-  <div class="topbar-inner">
-    <span class="mark"><img src="nyore-logo.png" alt="Nyore" /></span>
-    <a href="index.html" class="brand">Ny<span class="accent">o</span>re</a>
-    <span class="crumb">Privacy Policy</span>
-  </div>
-</nav>
+<main class="doc">
+  <nav class="toc" aria-label="On this page">
+    <p>On this page</p>
+    <ul>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#use">How we use your information</a></li>
+      <li><a href="#third-parties">Third-party services</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+  </nav>
 
-<main>
-  <div class="eyebrow"><span class="dot"></span><span>Last updated · September 29, 2026</span></div>
-  <h1>Privacy <em>Policy</em></h1>
-  <span class="updated">Effective immediately for all users</span>
+  <article class="prose">
+  <h1 class="enter-1">Privacy policy</h1>
+  <p class="meta enter-2"><time datetime="2026-09-29">Last updated September 29, 2026</time>. Effective immediately for all users.</p>
 
-  <p class="intro">
-    This Privacy Policy describes how <strong>Nyore — Your AI Cultural Companion</strong> ("we", "us", "our")
+  <p class="intro enter-2">
+    This Privacy Policy describes how <strong>Nyore: Your AI Cultural Companion</strong> ("we", "us", "our")
     collects, uses, and protects your information when you use our mobile application ("App"). By using
     Nyore, you agree to the practices described below.
   </p>
 
   <section>
-    <h2><span class="num">01</span>Information We Collect</h2>
+    <h2 id="collect">Information we collect</h2>
     <ul>
       <li><strong>Account Information:</strong> When you sign in with Apple or Google, we receive your
         name, email address, and a unique user identifier to create and manage your account.</li>
@@ -170,7 +76,7 @@ footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
         servers to provide continuity across sessions. You may request deletion at any time.</li>
       <li><strong>Activity, Itinerary &amp; Group Data:</strong> Your visit history, planned itineraries,
         group rooms, mini-game scores, and shared favorites are stored to personalise your experience.</li>
-      <li><strong>Usage &amp; Analytics Data:</strong> We log how you interact with the app — screens
+      <li><strong>Usage &amp; Analytics Data:</strong> We log how you interact with the app: screens
         viewed, key actions (itinerary generated, museum saved, recap shared), session duration, and
         the marketing source you arrived from (UTM parameters from a deep link, if any). These events
         are linked to your account identifier so we can build retention and funnel insights and
@@ -190,7 +96,7 @@ footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
   </section>
 
   <section>
-    <h2><span class="num">02</span>How We Use Your Information</h2>
+    <h2 id="use">How we use your information</h2>
     <ul>
       <li>To provide AI-powered artwork and cultural analysis</li>
       <li>To authenticate and manage your account securely</li>
@@ -198,7 +104,7 @@ footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
       <li>To personalise itineraries, recommendations, and quiz content</li>
       <li>To persist your chat history and group activity across sessions</li>
       <li>To manage your subscription and unlock premium features</li>
-      <li>To send the notifications you allow, and only those — we never send marketing or
+      <li>To send the notifications you allow, and only those; we never send marketing or
         promotional push notifications</li>
       <li>To improve the App's features and performance</li>
       <li>To respond to support requests</li>
@@ -206,26 +112,26 @@ footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
   </section>
 
   <section>
-    <h2><span class="num">03</span>Third-Party Services</h2>
+    <h2 id="third-parties">Third-party services</h2>
     <p>Nyore uses the following third-party services, each governed by their own privacy policies:</p>
     <ul>
-      <li><strong>Apple Sign-In</strong> — authentication via your Apple ID
+      <li><strong>Apple Sign-In:</strong> authentication via your Apple ID
         (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>)</li>
-      <li><strong>Google Sign-In</strong> — authentication via your Google account
+      <li><strong>Google Sign-In:</strong> authentication via your Google account
         (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>)</li>
-      <li><strong>RevenueCat</strong> — in-app purchase and subscription management
+      <li><strong>RevenueCat:</strong> in-app purchase and subscription management
         (<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>)</li>
-      <li><strong>Sentry</strong> — crash reporting and performance monitoring. Diagnostic events
+      <li><strong>Sentry:</strong> crash reporting and performance monitoring. Diagnostic events
         are linked to your account identifier for triage; emails are obfuscated on-device before
         transmission. (<a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry Privacy Policy</a>)</li>
-      <li><strong>PostHog</strong> — product analytics (screens viewed, key actions, retention).
+      <li><strong>PostHog:</strong> product analytics (screens viewed, key actions, retention).
         Events are linked to your account identifier; opt-out is available in-app via Settings →
         Privacy. (<a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog Privacy Policy</a>)</li>
-      <li><strong>Google Maps</strong> — displaying museum locations and nearby points of interest
+      <li><strong>Google Maps:</strong> displaying museum locations and nearby points of interest
         (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>)</li>
-      <li><strong>Expo / EAS</strong> — app delivery and over-the-air updates
+      <li><strong>Expo / EAS:</strong> app delivery and over-the-air updates
         (<a href="https://expo.dev/privacy" target="_blank" rel="noopener">Expo Privacy Policy</a>)</li>
-      <li><strong>Apple Push Notification service</strong> — delivering notifications to your device.
+      <li><strong>Apple Push Notification service:</strong> delivering notifications to your device.
         Notifications are sent directly from our own servers to Apple; no other push provider is
         involved. (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>)</li>
     </ul>
@@ -235,19 +141,19 @@ footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
   </section>
 
   <section>
-    <h2><span class="num">04</span>Data Retention</h2>
+    <h2 id="retention">Data retention</h2>
     <p>Images and voice data are processed in real time and are <strong>not permanently stored</strong>
       on our servers. Account information, chat history, group activity, and itinerary data are
       retained as long as your account is active. You may request deletion of your account and all
       associated data at any time by contacting us.</p>
-    <p>Notification records — the notifications we have queued or sent you, including any group
-      member names they mention — are deleted 30 days after they are created. A registered device,
+    <p>Notification records (the notifications we have queued or sent you, including any group
+      member names they mention) are deleted 30 days after they are created. A registered device,
       with its push token and settings, is deleted 180 days after that device last opened the app,
       and immediately when you sign out on it or turn notifications off in iOS Settings.</p>
   </section>
 
   <section>
-    <h2><span class="num">05</span>Your Rights</h2>
+    <h2 id="rights">Your rights</h2>
     <p>Depending on your location, you may have the right to:</p>
     <ul>
       <li>Access the personal data we hold about you</li>
@@ -259,44 +165,43 @@ footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
   </section>
 
   <section>
-    <h2><span class="num">06</span>Children's Privacy</h2>
+    <h2 id="children">Children's privacy</h2>
     <p>Nyore is not directed at children under the age of 13. We do not knowingly collect personal
       information from children under 13. If we become aware that a child has provided us personal
       data, we will delete it promptly.</p>
   </section>
 
   <section>
-    <h2><span class="num">07</span>Security</h2>
+    <h2 id="security">Security</h2>
     <p>We use industry-standard security measures to protect your information, including HTTPS
       encryption for all data in transit, secure token storage on your device, and JWT-based
       authentication with automatic token refresh.</p>
   </section>
 
   <section>
-    <h2><span class="num">08</span>Changes to This Policy</h2>
+    <h2 id="changes">Changes to this policy</h2>
     <p>We may update this Privacy Policy from time to time. We will notify you of significant changes
       by updating the "Last updated" date above. Continued use of the App after changes constitutes
       acceptance of the revised policy.</p>
   </section>
 
-  <div class="contact-box">
-    <h2><span class="num">✉</span>Contact Us</h2>
+  <section class="note">
+    <h2 id="contact">Contact us</h2>
     <p>If you have questions about this Privacy Policy, please contact us at
       <a href="mailto:gozukara.mert1@gmail.com">gozukara.mert1@gmail.com</a>.</p>
-  </div>
+  </section>
+  </article>
 </main>
 
 <footer>
-  <span>© <span id="y">2026</span> Nyore · com.frontendmuse.app</span>
-  <div class="row">
-    <a href="index.html">Home</a>
-    <span>·</span>
+  <nav aria-label="Footer">
+    <a href="https://www.nyore.app/">nyore.app</a>
     <a href="support.html">Support</a>
-    <span>·</span>
+    <a href="privacy-policy.html" aria-current="page">Privacy</a>
     <a href="mailto:gozukara.mert1@gmail.com">Contact</a>
-  </div>
+  </nav>
+  <p>© <span id="y">2026</span> Nyore</p>
 </footer>
-
 <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>

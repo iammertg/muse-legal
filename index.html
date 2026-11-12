@@ -1,137 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<title>Nyore — Legal &amp; Support</title>
-<meta name="description" content="Privacy Policy and Support information for the Nyore app — your AI cultural companion." />
-<meta name="theme-color" content="#0A0F14" />
-<link rel="icon" type="image/png" href="nyore-logo.png" />
-<link rel="apple-touch-icon" href="nyore-logo.png" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Nyore: legal and support</title>
+<meta name="description" content="Privacy policy and support for the Nyore app, your AI cultural companion." />
+<link rel="canonical" href="https://iammertg.github.io/muse-legal/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Nyore" />
+<meta property="og:url" content="https://iammertg.github.io/muse-legal/" />
+<meta property="og:title" content="Nyore: legal and support" />
+<meta property="og:description" content="Privacy policy and support for the Nyore app." />
+<meta property="og:image" content="https://www.nyore.app/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="The Mona Lisa lit on a green gallery wall, with Nyore's camera holding it on an iPhone" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#0F1814" />
+
+<link rel="icon" type="image/png" sizes="128x128" href="favicon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,0..100;1,9..144,400..600,0..100&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --ink:#0A0F14; --ink-1:#0E141A; --ink-2:#131A22;
-  --gold:#E6B84A; --gold-deep:#B08D57; --gold-soft:#F1D89B;
-  --ivory:#F4EFE6; --mute:rgba(244,239,230,.58); --mute-2:rgba(244,239,230,.32);
-  --line:rgba(230,184,74,.16); --line-2:rgba(244,239,230,.08);
-  --display:'Fraunces',serif; --body:'Manrope',sans-serif; --mono:'JetBrains Mono',monospace;
-}
-html{scroll-behavior:smooth}
-body{
-  font-family:var(--body);background:var(--ink);color:var(--ivory);
-  min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  padding:3rem 1.25rem;line-height:1.6;-webkit-font-smoothing:antialiased;
-  position:relative;overflow-x:hidden;
-}
-body::before{
-  content:'';position:fixed;inset:-20%;z-index:-1;
-  background:
-    radial-gradient(40% 50% at 50% 30%, rgba(230,184,74,.12), transparent 65%),
-    radial-gradient(50% 60% at 70% 80%, rgba(157,131,255,.05), transparent 70%);
-  pointer-events:none;
-}
-.container{max-width:640px;width:100%;text-align:center;position:relative;z-index:1}
-.eyebrow{
-  display:inline-flex;align-items:center;gap:14px;
-  font-family:var(--mono);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold);
-  margin-bottom:24px;
-}
-.eyebrow .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
-
-.brand-mark{
-  width:96px;height:96px;display:grid;place-items:center;margin:0 auto 28px;
-}
-.brand-mark img{
-  width:100%;height:100%;object-fit:contain;
-  mix-blend-mode:screen;
-  filter:drop-shadow(0 0 30px rgba(230,184,74,.45));
-}
-
-h1{
-  font-family:var(--display);font-weight:400;font-size:clamp(48px,6vw,72px);letter-spacing:-0.025em;
-  line-height:1;margin-bottom:14px;
-  font-variation-settings:"opsz" 144,"SOFT" 30;
-}
-h1 .accent{color:var(--gold);font-style:italic;font-weight:500;font-variation-settings:"opsz" 144,"SOFT" 100}
-
-.subtitle{
-  color:var(--mute);font-size:1rem;max-width:42ch;margin:0 auto 56px;line-height:1.6;font-weight:300;
-}
-
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:56px}
-.card{
-  background:linear-gradient(180deg, rgba(244,239,230,.03), rgba(244,239,230,.005));
-  border:1px solid var(--line-2);border-radius:18px;
-  padding:28px 24px;text-decoration:none;color:var(--ivory);
-  display:flex;flex-direction:column;align-items:flex-start;text-align:left;
-  transition:transform .35s cubic-bezier(.22,.61,.36,1), border-color .35s, box-shadow .35s, background .35s;
-}
-.card:hover{
-  transform:translateY(-4px);
-  border-color:var(--line);
-  background:linear-gradient(180deg, rgba(230,184,74,.06), rgba(230,184,74,.01));
-  box-shadow:0 18px 50px rgba(0,0,0,.35), 0 0 0 1px rgba(230,184,74,.18) inset;
-}
-.card .ic{
-  width:34px;height:34px;border-radius:10px;
-  background:rgba(230,184,74,.10);border:1px solid var(--line);
-  display:grid;place-items:center;color:var(--gold);font-size:16px;
-  margin-bottom:18px;
-}
-.card h2{
-  font-family:var(--display);font-weight:500;font-size:20px;letter-spacing:-.01em;color:var(--ivory);
-  margin-bottom:6px;font-variation-settings:"opsz" 144;
-}
-.card p{font-size:13.5px;color:var(--mute);line-height:1.55}
-.card .arrow{
-  margin-top:18px;font-family:var(--mono);font-size:10.5px;letter-spacing:0.22em;
-  text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:8px;
-}
-
-footer{
-  color:var(--mute-2);font-family:var(--mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;
-  display:flex;flex-direction:column;align-items:center;gap:8px;
-}
-footer .div{width:40px;height:1px;background:var(--line);margin:8px auto}
-
-@media (max-width:540px){.cards{grid-template-columns:1fr}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css" />
 </head>
 <body>
-<div class="container">
-  <div class="eyebrow">
-    <span class="dot"></span>
-    <span>Legal &amp; Support</span>
-  </div>
-  <div class="brand-mark"><img src="nyore-logo.png" alt="Nyore" /></div>
-  <h1>Ny<span class="accent">o</span>re</h1>
-  <p class="subtitle">Your AI cultural companion. Resources, policies, and help — for travelers, museum-goers, and the simply curious.</p>
+<header class="nav">
+  <a class="brand" href="https://www.nyore.app/" aria-label="Nyore home"><img src="logo.png" width="96" height="96" alt="" />Nyore</a>
+  <a class="nav-cta" href="https://apps.apple.com/app/id6759682028" target="_blank" rel="noopener">Download</a>
+</header>
 
-  <div class="cards">
-    <a class="card" href="privacy-policy.html">
-      <span class="ic">◐</span>
-      <h2>Privacy Policy</h2>
+<main>
+  <h1 class="enter-1">Legal and support</h1>
+  <p class="lede enter-2">Your AI cultural companion. Resources, policies, and help for travelers, museum-goers, and the simply curious.</p>
+
+  <div class="panels enter-3">
+    <a class="panel" href="privacy-policy.html">
+      <h2>Privacy policy</h2>
       <p>How we collect, use, and protect your personal data.</p>
-      <span class="arrow">Read · <span aria-hidden="true">→</span></span>
     </a>
-    <a class="card" href="support.html">
-      <span class="ic">◑</span>
+    <a class="panel" href="support.html">
       <h2>Support</h2>
       <p>Get help, browse FAQs, or contact us directly.</p>
-      <span class="arrow">Open · <span aria-hidden="true">→</span></span>
     </a>
   </div>
+</main>
 
-  <footer>
-    <span>© <span id="y">2026</span> Nyore · com.frontendmuse.app</span>
-    <span class="div"></span>
-    <span>Crafted with care · MMXXVI</span>
-  </footer>
-</div>
+<footer>
+  <nav aria-label="Footer">
+    <a href="https://www.nyore.app/">nyore.app</a>
+    <a href="support.html">Support</a>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="mailto:gozukara.mert1@gmail.com">Contact</a>
+  </nav>
+  <p>© <span id="y">2026</span> Nyore</p>
+</footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>

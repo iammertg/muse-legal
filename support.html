@@ -1,307 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<title>Support — Nyore</title>
-<meta name="description" content="Get support for the Nyore app — your AI cultural companion. Contact us or browse frequently asked questions." />
-<meta name="theme-color" content="#0A0F14" />
-<link rel="icon" type="image/png" href="nyore-logo.png" />
-<link rel="apple-touch-icon" href="nyore-logo.png" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Nyore: support</title>
+<meta name="description" content="Get support for the Nyore app, your AI cultural companion. Contact us or browse frequently asked questions." />
+<link rel="canonical" href="https://iammertg.github.io/muse-legal/support.html" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Nyore" />
+<meta property="og:url" content="https://iammertg.github.io/muse-legal/support.html" />
+<meta property="og:title" content="Nyore: support" />
+<meta property="og:description" content="Contact Nyore or browse frequently asked questions." />
+<meta property="og:image" content="https://www.nyore.app/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="The Mona Lisa lit on a green gallery wall, with Nyore's camera holding it on an iPhone" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#0F1814" />
+
+<link rel="icon" type="image/png" sizes="128x128" href="favicon.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,0..100;1,9..144,400..600,0..100&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --ink:#0A0F14; --ink-1:#0E141A; --ink-2:#131A22;
-  --gold:#E6B84A; --gold-deep:#B08D57; --gold-soft:#F1D89B;
-  --ivory:#F4EFE6; --mute:rgba(244,239,230,.62); --mute-2:rgba(244,239,230,.34);
-  --line:rgba(230,184,74,.16); --line-2:rgba(244,239,230,.08);
-  --display:'Fraunces',serif; --body:'Manrope',sans-serif; --mono:'JetBrains Mono',monospace;
-}
-html{scroll-behavior:smooth}
-body{
-  font-family:var(--body);background:var(--ink);color:var(--ivory);
-  min-height:100vh;line-height:1.65;-webkit-font-smoothing:antialiased;
-  position:relative;overflow-x:hidden;padding:2rem 1rem 4rem;
-}
-body::before{
-  content:'';position:fixed;inset:-20%;z-index:-1;
-  background:
-    radial-gradient(40% 40% at 30% 10%, rgba(230,184,74,.08), transparent 65%),
-    radial-gradient(50% 60% at 80% 90%, rgba(157,131,255,.05), transparent 70%);
-  pointer-events:none;
-}
-.container{max-width:780px;margin:0 auto}
-
-/* HEADER */
-header{
-  display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;
-  margin-bottom:64px;padding-bottom:28px;border-bottom:1px solid var(--line-2);
-}
-header .mark{
-  width:62px;height:62px;display:grid;place-items:center;flex-shrink:0;
-}
-header .mark img{
-  width:100%;height:100%;object-fit:contain;
-  mix-blend-mode:screen;
-  filter:drop-shadow(0 0 20px rgba(230,184,74,.40));
-}
-header .back{
-  display:inline-flex;align-items:center;gap:8px;
-  font-family:var(--mono);font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;
-  color:var(--mute);text-decoration:none;margin-bottom:10px;transition:color .25s;
-}
-header .back:hover{color:var(--gold)}
-header h1{
-  font-family:var(--display);font-weight:500;font-size:36px;letter-spacing:-.02em;color:var(--ivory);
-  font-variation-settings:"opsz" 144;
-}
-header h1 .accent{color:var(--gold);font-style:italic;font-variation-settings:"opsz" 144,"SOFT" 100}
-
-/* SECTION HEADERS */
-.eyebrow{
-  display:inline-flex;align-items:center;gap:12px;
-  font-family:var(--mono);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold);
-  margin-bottom:18px;
-}
-.eyebrow .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
-h2.section{
-  font-family:var(--display);font-weight:500;font-size:28px;letter-spacing:-.015em;color:var(--ivory);
-  margin-bottom:24px;font-variation-settings:"opsz" 144;
-}
-h2.section em{color:var(--gold);font-style:italic;font-variation-settings:"opsz" 144,"SOFT" 100}
-
-/* CONTACT CARDS */
-.contact-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:72px;
-}
-.contact-card{
-  background:linear-gradient(180deg, rgba(244,239,230,.03), rgba(244,239,230,.005));
-  border:1px solid var(--line-2);border-radius:18px;padding:26px 24px;
-  transition:transform .35s cubic-bezier(.22,.61,.36,1), border-color .35s, background .35s;
-}
-.contact-card:hover{
-  transform:translateY(-3px);border-color:var(--line);
-  background:linear-gradient(180deg, rgba(230,184,74,.06), rgba(230,184,74,.005));
-}
-.contact-card .ic{
-  width:34px;height:34px;border-radius:10px;
-  background:rgba(230,184,74,.10);border:1px solid var(--line);
-  display:grid;place-items:center;color:var(--gold);font-size:15px;
-  margin-bottom:18px;
-}
-.contact-card h3{
-  font-family:var(--display);font-weight:500;font-size:18px;letter-spacing:-.01em;color:var(--ivory);
-  margin-bottom:6px;font-variation-settings:"opsz" 144;
-}
-.contact-card p{font-size:13.5px;color:var(--mute);line-height:1.55;margin-bottom:14px}
-.contact-card a{
-  font-family:var(--mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;
-  color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:6px;
-}
-.contact-card a:hover{color:var(--gold-soft)}
-
-/* FAQ */
-.faq{display:flex;flex-direction:column;gap:12px;margin-bottom:72px}
-details{
-  background:linear-gradient(180deg, rgba(244,239,230,.025), rgba(244,239,230,.005));
-  border:1px solid var(--line-2);border-radius:14px;overflow:hidden;
-  transition:border-color .25s, background .25s;
-}
-details[open]{
-  border-color:var(--line);
-  background:linear-gradient(180deg, rgba(230,184,74,.04), rgba(230,184,74,.005));
-}
-summary{
-  cursor:pointer;padding:18px 22px;
-  font-family:var(--display);font-weight:500;font-size:16.5px;letter-spacing:-.005em;color:var(--ivory);
-  font-variation-settings:"opsz" 144;
-  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;
-  user-select:none;
-}
-summary::-webkit-details-marker{display:none}
-summary::after{
-  content:'+';color:var(--gold);font-family:var(--display);font-weight:300;font-size:22px;
-  flex-shrink:0;transition:transform .3s cubic-bezier(.22,.61,.36,1);
-}
-details[open] summary::after{transform:rotate(45deg)}
-.faq-answer{
-  padding:6px 22px 22px;font-size:14.5px;line-height:1.7;color:var(--mute);font-weight:300;
-}
-.faq-answer a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line)}
-.faq-answer a:hover{color:var(--gold-soft);border-color:var(--gold)}
-
-/* FOOTER */
-footer{
-  margin-top:72px;padding-top:32px;border-top:1px solid var(--line-2);
-  display:flex;flex-direction:column;align-items:center;gap:8px;
-  font-family:var(--mono);font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--mute-2);
-}
-footer a{color:var(--mute);text-decoration:none;transition:color .25s}
-footer a:hover{color:var(--gold)}
-footer .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
-
-@media (max-width:540px){
-  .contact-grid{grid-template-columns:1fr}
-  header h1{font-size:28px}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css" />
 </head>
 <body>
-<div class="container">
+<header class="nav">
+  <a class="brand" href="https://www.nyore.app/" aria-label="Nyore home"><img src="logo.png" width="96" height="96" alt="" />Nyore</a>
+  <a class="nav-cta" href="https://apps.apple.com/app/id6759682028" target="_blank" rel="noopener">Download</a>
+</header>
 
-  <header>
-    <div class="mark"><img src="nyore-logo.png" alt="Nyore" /></div>
-    <div>
-      <a href="index.html" class="back">← Back to Home</a>
-      <h1>Sup<span class="accent">p</span>ort</h1>
-    </div>
-  </header>
+<main>
+  <h1 class="enter-1">Support</h1>
+  <p class="lede enter-2">How can we help? Write to us, or find your answer in the questions below.</p>
 
-  <div class="eyebrow"><span class="dot"></span><span>Get in Touch</span></div>
-  <h2 class="section">How can we <em>help?</em></h2>
-
-  <div class="contact-grid">
-    <div class="contact-card">
-      <span class="ic">✉</span>
-      <h3>Email Support</h3>
+  <div class="panels pair enter-3">
+    <a class="panel" href="mailto:gozukara.mert1@gmail.com">
+      <h2>Email support</h2>
       <p>Send us a message and we'll get back to you within 24–48 hours.</p>
-      <a href="mailto:gozukara.mert1@gmail.com">gozukara.mert1@gmail.com →</a>
-    </div>
-    <div class="contact-card">
-      <span class="ic">◎</span>
-      <h3>Report a Bug</h3>
+      <span class="go">gozukara.mert1@gmail.com</span>
+    </a>
+    <a class="panel" href="https://github.com/iammertg/muse-legal/issues" target="_blank" rel="noopener">
+      <h2>Report a bug</h2>
       <p>Found something off? Let us know so we can fix it as quickly as possible.</p>
-      <a href="https://github.com/iammertg/muse-legal/issues" target="_blank" rel="noopener">Open an issue →</a>
-    </div>
+      <span class="go">Open an issue</span>
+    </a>
   </div>
 
-  <div class="eyebrow"><span class="dot"></span><span>Knowledge Base</span></div>
-  <h2 class="section">Frequently asked <em>questions</em></h2>
+  <h2 class="part" id="faq">Frequently asked questions</h2>
 
   <div class="faq">
 
     <details>
-      <summary>What is Nyore?</summary>
-      <div class="faq-answer">
-        Nyore is your AI cultural companion. Point your camera at anything — a painting, a sculpture,
-        a temple, a hidden corner of any city — and Nyore reads its story out loud. You can ask
+      <summary>What is Nyore?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
+        Nyore is your AI cultural companion. Point your camera at anything (a painting, a sculpture,
+        a temple, a hidden corner of any city) and Nyore reads its story out loud. You can ask
         follow-up questions, plan a full day around one anchor stop, tour with friends, and share
         a recap of every visit.
-      </div>
+      </p>
     </details>
 
     <details>
-      <summary>How do I create an account?</summary>
-      <div class="faq-answer">
+      <summary>How do I create an account?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
         Download Nyore from the App Store and open the app. Tap "Sign in with Apple" or
-        "Sign in with Google" and follow the prompts. We do not require a password — authentication
+        "Sign in with Google" and follow the prompts. We do not require a password. Authentication
         runs through Apple or Google directly.
-      </div>
+      </p>
     </details>
 
     <details>
-      <summary>How does the AI assistant work?</summary>
-      <div class="faq-answer">
+      <summary>How does the AI assistant work?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
         Nyore uses large language models to answer your questions in real time. You can type your
         question, speak it with voice mode, or share a photo for visual analysis (brushwork, era,
         provenance, historical context). All queries are processed securely and image and audio
         inputs are not permanently stored.
-      </div>
+      </p>
     </details>
 
     <details>
-      <summary>Why does Nyore need camera and microphone access?</summary>
-      <div class="faq-answer">
+      <summary>Why does Nyore need camera and microphone access?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
         Camera and photo library permissions allow you to point at any artwork or object for
         AI-powered visual analysis. The microphone permission enables voice mode so you can ask
-        questions hands-free — useful when you're walking through a gallery and don't want to type.
-      </div>
+        questions hands-free, useful when you're walking through a gallery and don't want to type.
+      </p>
     </details>
 
     <details>
-      <summary>How does Plan Your Day work?</summary>
-      <div class="faq-answer">
-        Anchor one stop — a museum, a café, a landmark you've been saving — and Nyore composes
+      <summary>How does Plan Your Day work?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
+        Anchor one stop (a museum, a café, a landmark you've been saving) and Nyore composes
         the rest of the day from curated venues, balanced pace, and walking-time math. You can
         adjust the duration, the number of stops, and the vibe (relaxed, balanced, packed) and
         re-generate as many times as you like.
-      </div>
+      </p>
     </details>
 
     <details>
-      <summary>What is Group Mode?</summary>
-      <div class="faq-answer">
+      <summary>What is Group Mode?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
         Group Mode lets you and your friends tour the same place together. You'll get live chat,
         shared favorites, mini-games (Bingo and Fact-or-Bluff), a leaderboard, and a single shared
         recap at the end of the day. One person creates the room, the rest join with a code.
-      </div>
+      </p>
     </details>
 
     <details>
-      <summary>Is my data private and secure?</summary>
-      <div class="faq-answer">
+      <summary>Is my data private and secure?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
         Yes. Voice and image inputs are processed in real time and not permanently stored. Your
         account data is secured via Apple or Google sign-in. We never sell your data and never
         share it for advertising. Full details are in our
         <a href="privacy-policy.html">Privacy Policy</a>.
-      </div>
+      </p>
     </details>
 
     <details>
-      <summary>How do I delete my account?</summary>
-      <div class="faq-answer">
+      <summary>How do I delete my account?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
         To delete your account and all associated data, please email
         <a href="mailto:gozukara.mert1@gmail.com">gozukara.mert1@gmail.com</a> with the subject
         line "Account Deletion Request". We process every request within 7 business days.
-      </div>
+      </p>
     </details>
 
     <details>
-      <summary>Which languages does Nyore support?</summary>
-      <div class="faq-answer">
-        Nyore speaks 18 languages — including English, Turkish, Spanish, French, German, Italian,
+      <summary>Which languages does Nyore support?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
+        Nyore speaks 18 languages, including English, Turkish, Spanish, French, German, Italian,
         Portuguese, Arabic, Persian, Hindi, Bengali, Punjabi, Telugu, Japanese, Korean, Chinese,
         Vietnamese, and Javanese. The interface and voice narration both adapt automatically.
-      </div>
+      </p>
     </details>
 
     <details>
-      <summary>How do I share my visit recap?</summary>
-      <div class="faq-answer">
-        After any visit, open the Recap from your activity feed. Choose Story, Carousel, or Post
-        — Nyore generates a ready-to-share image with the venue, your favorite pieces, the numbers
+      <summary>How do I share my visit recap?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
+        After any visit, open the Recap from your activity feed. Choose Story, Carousel, or Post.
+        Nyore generates a ready-to-share image with the venue, your favorite pieces, the numbers
         that mattered, and a QR code back to the experience. Save it or share straight to your
         feed of choice.
-      </div>
+      </p>
     </details>
 
     <details>
-      <summary>The app isn't working as expected. What should I do?</summary>
-      <div class="faq-answer">
+      <summary>The app isn't working as expected. What should I do?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
         First, force-quit and reopen the app, then check your internet connection. If the issue
         persists, try uninstalling and reinstalling. If none of that helps, please email
         <a href="mailto:gozukara.mert1@gmail.com">gozukara.mert1@gmail.com</a> with a short
-        description, your iPhone model, and your iOS version — we'll get back to you quickly.
-      </div>
+        description, your iPhone model, and your iOS version. We'll get back to you quickly.
+      </p>
     </details>
 
   </div>
+</main>
 
-  <footer>
-    <span>© <span id="y">2026</span> Nyore</span>
-    <div class="row">
-      <a href="index.html">Home</a>
-      <span>·</span>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <span>·</span>
-      <a href="mailto:gozukara.mert1@gmail.com">Contact</a>
-    </div>
-  </footer>
-
-</div>
+<footer>
+  <nav aria-label="Footer">
+    <a href="https://www.nyore.app/">nyore.app</a>
+    <a href="support.html" aria-current="page">Support</a>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="mailto:gozukara.mert1@gmail.com">Contact</a>
+  </nav>
+  <p>© <span id="y">2026</span> Nyore</p>
+</footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
