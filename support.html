@@ -30,7 +30,7 @@
 <body>
 <header class="nav">
   <a class="brand" href="https://www.nyore.app/" aria-label="Nyore home"><img src="logo.png" width="96" height="96" alt="" />Nyore</a>
-  <a class="nav-cta" href="https://apps.apple.com/app/id6759682028" target="_blank" rel="noopener">Download</a>
+  <a class="nav-cta" href="https://www.nyore.app/">Get the app</a>
 </header>
 
 <main>
@@ -67,9 +67,9 @@
     <details>
       <summary>How do I create an account?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
       <p class="answer">
-        Download Nyore from the App Store and open the app. Tap "Sign in with Apple" or
-        "Sign in with Google" and follow the prompts. We do not require a password. Authentication
-        runs through Apple or Google directly.
+        Download Nyore from Google Play or the App Store and open it. On Android, tap "Sign in with
+        Google"; on iPhone, choose "Sign in with Apple" or "Sign in with Google". There is no Nyore
+        password: signing in runs through Google or Apple directly.
       </p>
     </details>
 
@@ -78,17 +78,20 @@
       <p class="answer">
         Nyore uses large language models to answer your questions in real time. You can type your
         question, speak it with voice mode, or share a photo for visual analysis (brushwork, era,
-        provenance, historical context). All queries are processed securely and image and audio
-        inputs are not permanently stored.
+        provenance, historical context). Your questions and photos are analysed by Google Gemini,
+        and your chats, with their photos, are kept so you can come back to them, until you delete
+        them. Voice is turned into text by your phone's speech recognition; we never receive a recording.
       </p>
     </details>
 
     <details>
       <summary>Why does Nyore need camera and microphone access?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
       <p class="answer">
-        Camera and photo library permissions allow you to point at any artwork or object for
-        AI-powered visual analysis. The microphone permission enables voice mode so you can ask
-        questions hands-free, useful when you're walking through a gallery and don't want to type.
+        Camera and photo permissions let you point at any artwork or object, or choose a photo,
+        for AI-powered visual analysis. The microphone lets you ask questions hands-free, useful when
+        you're walking through a gallery and don't want to type; your phone's own speech recognition
+        turns your voice into text. Both are optional, and you can change them at any time in your
+        phone's settings.
       </p>
     </details>
 
@@ -114,19 +117,32 @@
     <details>
       <summary>Is my data private and secure?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
       <p class="answer">
-        Yes. Voice and image inputs are processed in real time and not permanently stored. Your
-        account data is secured via Apple or Google sign-in. We never sell your data and never
-        share it for advertising. Full details are in our
-        <a href="privacy-policy.html">Privacy Policy</a>.
+        We never sell your data, never share it for advertising and show no ads. Photos you take are
+        stored privately with your chat until you delete it, we never receive recordings of your
+        voice, and location is used only for nearby places and routes. Our
+        <a href="privacy-policy.html">privacy policy</a> lists everything we collect, who processes
+        it and how long it is kept.
       </p>
     </details>
 
     <details>
       <summary>How do I delete my account?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
       <p class="answer">
-        To delete your account and all associated data, please email
-        <a href="mailto:gozukara.mert1@gmail.com">gozukara.mert1@gmail.com</a> with the subject
-        line "Account Deletion Request". We process every request within 7 business days.
+        In the app, open the Profile tab, scroll to the bottom and tap Delete Account, then confirm.
+        Without the app, email <a href="mailto:gozukara.mert1@gmail.com?subject=Account%20Deletion%20Request">gozukara.mert1@gmail.com</a>
+        from your sign-in address with the subject "Account Deletion Request"; we delete it within
+        7 business days. <a href="delete-account.html">What is deleted and what is kept</a>.
+      </p>
+    </details>
+
+    <details>
+      <summary>How do I cancel Nyore Premium?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /><path class="v" d="M10 4v12" /></svg></summary>
+      <p class="answer">
+        Premium is managed by the store you bought it from. On Android, open Google Play, tap your
+        profile picture, then Payments &amp; subscriptions → Subscriptions. On iPhone, open Settings,
+        tap your name, then Subscriptions. Premium stays active until the end of the period you've
+        paid for. Deleting the app or your account does not cancel it. See our
+        <a href="terms.html#premium">terms</a> for renewals and trials.
       </p>
     </details>
 
@@ -155,7 +171,8 @@
         First, force-quit and reopen the app, then check your internet connection. If the issue
         persists, try uninstalling and reinstalling. If none of that helps, please email
         <a href="mailto:gozukara.mert1@gmail.com">gozukara.mert1@gmail.com</a> with a short
-        description, your iPhone model, and your iOS version. We'll get back to you quickly.
+        description, your phone model, and its Android or iOS version. We'll get back to you
+        quickly.
       </p>
     </details>
 
@@ -167,7 +184,8 @@
     <a href="https://www.nyore.app/">nyore.app</a>
     <a href="support.html" aria-current="page">Support</a>
     <a href="privacy-policy.html">Privacy</a>
-    <a href="mailto:gozukara.mert1@gmail.com">Contact</a>
+    <a href="terms.html">Terms</a>
+    <a href="delete-account.html">Delete account</a>
   </nav>
   <p>© <span id="y">2026</span> Nyore</p>
 </footer>
